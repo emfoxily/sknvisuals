@@ -1,9 +1,11 @@
 <template>
     <nav>
-        <img src="../assets/sknvisuals.png" alt="sknvisuals" />
         <ul class="links">
             <li>
                 ABOUT
+            </li>
+            <li>
+                PORTFOLIO
             </li>
             <li>
                 CALENDAR
@@ -27,25 +29,24 @@ export default {
 <style scope>
     nav {
         position: fixed;
-        background-color: #28AFB0;
+        background-color: #191919;
         width: 100%;
+        padding: 1em;
+        margin: 0 auto;
         top: 0;
         left: 0;
-    }
-    nav img {
-        width: 15%;
+        box-shadow: 2px 2px 25px #000;
     }
 
     ul {
-        display: flex;
         width: 100%;
         margin: 0 auto;
-        background-color: #191919;
         color: #EEE5E5;
         list-style: none;
     }
 
     li {
+        display: inline-block;
         margin-right: 10vw;
     }
 </style>

@@ -17,7 +17,8 @@ export default {
 
 <style>
 body {
-  background-image: url('./assets/nami.png')
+  background-image: url('./assets/woodbg.png');
+  background-color: #0C7489;
 }
 
 #app {
