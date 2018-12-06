@@ -1,43 +1,51 @@
 <template>
   <div class="container">
-    <Navigation />
-    <div class="logo">
-      <img src="../assets/sknvisuals.png" alt="sknvisuals" />
+    <div class="header">
+      <div class="logo">
+        <img src="../assets/sknvisuals.png" alt="sknvisuals" />
+      </div>
+      <div class="camera">
+        <img src="../assets/cameralens.png" alt="camera lens" />
+      </div>
     </div>
-    <div class="camera">
-      <img src="../assets/cameralens.png" alt="camera lens" />
-    </div>
+    <About />
   </div>
 </template>
 
 <script>
   import Navigation from '../navigation/Navigation.vue';
+  import About from '../about/About.vue';
   
   export default {
     name: 'Home',
     components: {
-      Navigation
+      Navigation,
+      About
     }
   };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scope>
-  .container {
+  .header {
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(25, 25, 25, .5));
     display: flex;
-    width: 90%;
-    margin: 100px auto;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
   }
-
+  
   .logo {
-    margin-left: 50px;
+    margin-left: 5em;
   }
   
   .logo img {
-    width: 150%;
+    width: 135%;
   }
   
   .camera img {
-    width: 65%;
+    margin-top: 10px;
+    width: 55%;
   }
 </style>

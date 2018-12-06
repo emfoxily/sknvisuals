@@ -16,6 +16,14 @@ export default {
 </script>
 
 <style>
+@font-face {
+    font-family: 'tahu';
+    src: url('./assets/fonts/tahu-webfont.woff2') format('woff2'),
+         url('./assets/fonts/tahu-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   background-image: url('./assets/woodbg.png');
   background-color: #0C7489;
